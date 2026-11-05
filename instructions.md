@@ -33,7 +33,8 @@
 - They test the application as a black box through its API, mocking only external services.
 - Names use business language, with no filler words or technical details.
 - Nest names to avoid repetition, by initial state, operation or outcome: "A logged in customer > can place > an order".
-- Each rule is verified once.
+- Each rule is verified once, and each branch of a rule counts as its own rule.
+- When a rule depends on a definition, use one obvious example here and verify the definition in logic tests.
 - Write a negative test only when a rule forbids something.
 
 ### Logic tests
@@ -44,6 +45,7 @@
 
 ### Regression probes
 
+- Use them on a few key responses only.
 - They are simple, coarse checks that a response keeps its shape, using a hash or snapshot.
 - Mask values that change between runs, such as IDs and timestamps.
 - They only say that something changed. Specification tests say what stopped working, and logic tests say why.
