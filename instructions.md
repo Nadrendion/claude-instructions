@@ -17,6 +17,10 @@
 - Squash merge into the main branch. The request title becomes the commit title, and the body lists the branch commit messages.
 - Claude's co-author line goes once at the end of the squash commit, never on branch commits.
 
+## Infrastructure
+
+- Define infrastructure as code in the repository, with no manual setup steps.
+
 ## This file
 
 - Keep it free of project names, specific technologies and employers.
