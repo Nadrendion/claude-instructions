@@ -16,6 +16,7 @@
 - Commit messages have a title only, with no body.
 - Squash merge into the main branch. The request title becomes the commit title, and the body lists the branch commit messages.
 - Claude's co-author line goes once at the end of the squash commit, never on branch commits.
+- Don't merge a pull or merge request with failing checks.
 
 ## Infrastructure
 
