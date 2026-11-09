@@ -13,8 +13,8 @@
 - Commit messages and pull or merge request titles follow Conventional Commits.
 - Use a scope in commit messages and pull or merge request titles, such as `feat(login): add logout button`.
 - Write the description so it completes the sentence "applying this PR will ...".
-- Commit messages have a title only, with no body.
-- Squash merge into the main branch. The request title becomes the commit title, and the body lists the branch commit messages.
+- A commit message has a body: a short list, in plain words, of what the commit changes. Why it changed goes in the project's decisions and the pull or merge request.
+- Squash merge into the main branch. The request title becomes the commit title, and the body lists each branch commit's title with its body under it.
 - Claude's co-author line goes once at the end of the squash commit, never on branch commits.
 - Don't merge a pull or merge request with failing checks.
 
