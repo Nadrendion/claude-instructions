@@ -14,7 +14,7 @@ Read the pull request's status from the app, and its checks from the host. Show 
 Only after the user says yes.
 
 - Squash merge, with the pull request's title as the commit title.
-- The body lists the branch's commit messages, followed by the co-author line.
+- The body lists each branch commit's title with its body under it, followed by the co-author line.
 - Delete the branch, update the local main branch, and confirm that the issue closed.
 
 ## Afterwards
