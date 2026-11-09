@@ -19,4 +19,4 @@ Only after the user says yes.
 
 ## Afterwards
 
-Update the progress notes, and say what comes next.
+Run end-a-session.

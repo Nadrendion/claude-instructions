@@ -1,6 +1,6 @@
 ---
 name: plan-a-slice
-description: Use before building any feature or issue, to agree with the user on what to build.
+description: Use first in a new session, when the startup prompt asks to plan a feature or issue, to agree with the user on what to build before anything is built.
 ---
 
 # Plan a slice
