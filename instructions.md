@@ -4,8 +4,14 @@
 
 - When the work reaches something we haven't agreed on, ask instead of assuming.
 - Ask at a detailed level, with a recommendation.
-- Ask when the decision comes up, not everything up front.
+- When planning, ask every open question in one message, each with a recommendation. The user answers only where they disagree.
+- Ask a question that comes up later, such as while building, when it comes up.
 - Record each decision when it's made. Decisions that apply to any project go in this file. Project-specific decisions go in that project's own files.
+
+## Screens
+
+- Design a screen that several issues will change once, as a whole, with every part that's coming, before building the first of them. Each issue then fills in its part of that design.
+- Show a sketch of every screen a plan adds or changes, at a phone's width with realistic data, before writing any tests.
 
 ## Git
 
