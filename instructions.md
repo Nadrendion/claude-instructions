@@ -39,7 +39,14 @@
 - They declare, as facts, which rules the application implements.
 - They test the application as a black box through its API, mocking only external services.
 - Names use business language, with no filler words or technical details.
-- Nest names to avoid repetition, by initial state, operation or outcome: "A logged in customer > can place > an order".
+- Names describe the rule, not the test data. Names of people, animals or things in the test stay in its body.
+- Every test has an initial state, an operation and an outcome (given, when, then).
+- Nest names by whichever part several tests share, to avoid repetition. The shared part comes first, whichever it is:
+  - By initial state: "A logged in customer > can place > an order".
+  - By operation: "Cancelling an order > before it ships > refunds the customer" and "Cancelling an order > after it ships > starts a return".
+  - By outcome: "An error log is written > when a customer cannot place > an order" and "An error log is written > when a customer cannot place > an item in the shopping cart".
+- A test that shares nothing with other tests isn't nested.
+- The subject of a name is what the rule is about, which isn't always a person: "A discount code > can be turned off and on" reads better than "A shop owner > can manage > a discount code".
 - Each rule is verified once, and each branch of a rule counts as its own rule.
 - When a rule depends on a definition, use one obvious example here and verify the definition in logic tests.
 - Write a negative test only when a rule forbids something.
